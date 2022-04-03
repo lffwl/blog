@@ -1,0 +1,43 @@
+# HTTP Server
+[server]
+	Address     = ":8199"
+	ServerRoot  = "public"
+	ServerAgent = "www.lffwl.com"
+	LogPath     = "D:/tmp/log/www_lffwl_com/server"
+
+# Template.
+[viewer]
+    Path        = "template"
+    DefaultFile = "index.html"
+    Delimiters  =  ["{{", "}}"]
+    ## seo
+    SeoTitle = " - LFFWL的个人博客"
+
+# Database.
+[database]
+    [[database.default]]
+        link  = "mysql:root:123456@tcp(127.0.0.1:3306)/www.lffwl.com"
+        debug = true
+        prefix = "www_"
+
+# gf gen
+[gfcli]
+    [[gfcli.gen.dao]]
+		link  = "mysql:root:123456@tcp(127.0.0.1:3306)/www.lffwl.com"
+        group  = "default"
+	[gfcli.build]
+		name     = "www_lffwl_com"
+		arch     = "amd64"
+		system   = "linux"
+		mod      = "none"
+		cgo      = 0
+		pack     = "template"
+		version  = "v1.0.0"
+		output   = "./bin"
+		extra    = ""
+
+
+# 文件上传设置
+[upload]
+    path = "D:/go/www.lffwl.com/file/"
+

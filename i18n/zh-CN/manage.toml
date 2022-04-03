@@ -1,0 +1,19 @@
+## public
+"rule.in-array" = ":attribute 值 %s 不在范围内"
+"id.not.exist" = "ID %d 不存在"
+"pid.not.exist" = "PID %d 不存在"
+"ids.not.exist" = "ID集合 %s 中有不存在的ID"
+"field.exist" = "%s字段 %s 已经存在"
+"field.not.exist" = "%s字段 %s 不存在"
+
+## admin
+"admin.userName.exist" = "账号 %s 已经存在"
+"admin.password.error" = "密码错误"
+"admin.not-bind.role" = "管理员没有绑定任何角色"
+
+## Role
+"role.name.exist" = "角色名称 %s 已经存在"
+
+## api
+"api.router.exist" = "请求地址 %s 和请求类型 %s 已经存在"
+

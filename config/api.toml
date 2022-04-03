@@ -1,0 +1,15 @@
+# Methods type
+[methods]
+    1 = "Get"
+    2 = "Post"
+    3 = "Put"
+    4 = "DELETE"
+
+# Menu type
+[menu_type]
+    0 = "菜单"
+    1 = "按钮"
+    2 = "隐藏"
+
+
+

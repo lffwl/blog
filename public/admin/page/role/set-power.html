@@ -10,7 +10,7 @@
     let setPower = {
         init: function (data) {
             L.loadTable({
-                url: '/role/' + L.pageObj().formData.id + '/get-api',
+                url: '/role/' + L.pageObj().formData.id,
                 type: 'GET',
                 loadTitle: '加载中...',
                 where: data || {},
